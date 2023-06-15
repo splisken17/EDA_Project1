@@ -24,6 +24,7 @@ str(df3)
 # Plot
 
 png("plot3.png", width=480, height = 480)
+
 plot(df3$Sub_metering_1, type= 'l', 
      ylab = 'Energy sub metering',
      xlab ='',
