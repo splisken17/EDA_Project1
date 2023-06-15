@@ -23,6 +23,7 @@ str(df3)
 
 # Plot
 
+png("plot3.png", width=480, height = 480)
 plot(df3$Sub_metering_1, type= 'l', 
      ylab = 'Energy sub metering',
      xlab ='',
@@ -37,6 +38,4 @@ legend("topright", lty = 1, col=c("black","red", "blue"),
 axis(1, at = c(0,1440,2880),
      labels = c('Thu', 'Fri', 'Sat'))
 
-
-dev.copy(png, file = "plot3.png", width = 480, height = 480)
 dev.off()
