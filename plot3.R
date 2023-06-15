@@ -23,7 +23,7 @@ str(df3)
 
 # Plot
 
-png("plot3.png", width=480, height = 480)
+png("plot3.png", width = 480, height = 480)
 
 plot(df3$Sub_metering_1, type= 'l', 
      ylab = 'Energy sub metering',
@@ -33,7 +33,7 @@ plot(df3$Sub_metering_1, type= 'l',
 lines(df3$Sub_metering_2, col="red")
 lines(df3$Sub_metering_3, col="blue")
 
-legend("topright", lty = 1, col=c("black","red", "blue"),
+legend("topright", lty = 1, col=c("black","red", "blue"), xpd = TRUE,
        legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 
 axis(1, at = c(0,1440,2880),
