@@ -23,6 +23,8 @@ str(df3)
 
 # Plot
 
+png("plot4.png", width=480, height = 480)
+
 par(mfcol = c(2,2))
 
 # plot1
@@ -67,6 +69,4 @@ plot(df3$Global_reactive_power, type= 'l',
 axis(1, at = c(0,1440,2880),
      labels = c('Thu', 'Fri', 'Sat'))
 
-
-dev.copy(png, file = "plot4.png", width = 480, height = 480)
 dev.off()
